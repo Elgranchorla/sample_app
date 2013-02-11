@@ -6,10 +6,13 @@ development:
   username: elgranchorla
   password: chorlin
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: store_test
   pool: 5
   username: elgranchorla
   password: chorlin
+
+cucumber:
+  <<: *test
